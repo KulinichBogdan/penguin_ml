@@ -4,8 +4,9 @@ import seaborn as sns
 import pandas as pd
 import pickle 
 
-st.title('Penguin Classifier')
+st.title('Penguin Classifier: A Machine Learning App')
 st.write("This app uses 6 inputs to predice the species of penguin using a model bouilt on the Palmer's Penguin's dataset. Use the form below to get started!")
+password_guess = st.text_input('What is the Password?')
 
 penguin_df = pd.read_csv('penguins.csv')
 rf_pickle = open('random_forest_penguin.pickle', 'rb')
