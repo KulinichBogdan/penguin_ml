@@ -6,7 +6,10 @@ import pickle
 
 st.title('Penguin Classifier: A Machine Learning App')
 st.write("This app uses 6 inputs to predice the species of penguin using a model bouilt on the Palmer's Penguin's dataset. Use the form below to get started!")
-password_guess = st.text_input('What is the Password?')
+
+# password_guess = st.text_input('What is the Password?')
+# if password_guess != 'streamlit_password':
+#    st.stop()
 
 penguin_df = pd.read_csv('penguins.csv')
 rf_pickle = open('random_forest_penguin.pickle', 'rb')
